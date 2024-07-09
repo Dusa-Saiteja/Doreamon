@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doraemon</title>
+    <link rel="stylesheet" href="./join.htm">
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+    <section id="nav-left">
+      <svg
+        viewBox="0 0 111 30"
+        data-uia="netflix-logo"
+        class="svg-icon svg-icon-netflix-logo"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <g id=logo>
+          <path
+            d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+            id="Fill-14"
+          ></path>
+        </g>
+      </svg>
+    </section>
+    <section id="nav-right">
+      <h5 style="color: white; padding-top: 6px;">UNLIMITED TV SHOWS & MOVIES</h5>
+      <button id="btn1"> JOIN NOW</button> 
+      <button id="btn2" onclick="show()">SIGN IN</button>
+    </section>
+    </nav>
+    <main>
+
+      <!-- for signin box -->
+
+      <!-- <div id="signin">
+        <label for="" class="UP" id="username">username</label>
+        &nbsp;<input type="text" name="" id="inp1"><br>
+        <label class="UP" for="pwd">password</label>
+        &nbsp;&nbsp;<input type="password" name="" id="inp2"> <br>
+        <button id="sub"> Submit</button>
+        <img id="x" onclick="hide()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUdJREFUSEvt1bsuRUEUxvGfS6XTewaJNxAhhAiFQkiUWgoPpEAhIiI6jZBoCF7FJS7R2EvmJHISZvbZyTmKM93OXrP+832z1poBPVoDPeLqg7vmfN/qf2X1KE6whYfMyWawXcUt4/Ov2NwdD+Ie43jEFO5+SbhYxR1jGGeI719XDhwbN7DLd88/YRo3bRkXkisB/UjQ86bgdvhLUt6Ct0PncJErlhLFrRyrOEjKW/AxHCZ73zBfAo2EdcARv4b9dJKAjyDq4B2zlROXOaWt/3XBsS+U72EoJQmlce/XpdBOFPcMvJ7UxgF+Wv2KKKqrUtV1rM4VV7RRUUXXsfpnL3etnToZIFnlOaujVW4xgeeqRycLR+ZpNWqXmk6ueCSOqmLaSXP7r3wxxTax0vSRKC3S2nE5q2snLN3QB5c61Tiub3VjC0sTfAHboEIfytnLXAAAAABJRU5ErkJggg=="/>
+
+      </div> -->
+
+      <!-- sign in box -->
+
+      
+      <div id="dor">
+        <img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABVXNtHGbmFqfZIVsFRHCeQGosE9g4vC8cAaitZhyqPGQDDXn4kttKjFKcz94EWtmTgyisc22dXc_olaHK5FKMVaWsxTU-iZIe_1v5BfHEBo6.png?r=347" height="200px" width="90%"> <br><br>
+        <h2 style="color: white;">STAND BY ME Doraemon</h2> <br>
+        <p style="color: white;">2014 | U/A 7+ | 1h 36m | Kids</p><br>
+        <p style="color: white;">Fourth-grader Nobita Nobi tries to improve his present life so that his <br> loyal cat robot, Doraemon, can return to his home in the future. <br> <br>Starring:Wasabi Mizuta, Megumi Ohara, Yumi Kakazu</p>
+      </div>
+      
+      <div id="plan">
+        <section id="empty"></section>
+        <svg id="N" class="value-prop-logo" focusable="false" viewBox="225 0 552 1000" aria-hidden="true" data-uia="n-logo"><defs><radialGradient id="4665ef02-2efd-4a1e-9804-39331c83c679-a" r="75%" gradientTransform="matrix(.38 0 .5785 1 .02 0)"><stop offset="60%" stop-opacity=".3"></stop><stop offset="90%" stop-opacity=".05"></stop><stop offset="100%" stop-opacity="0"></stop></radialGradient></defs><path d="M225 0v1000c60-8 138-14 198-17V0H225" fill="#b1060e"></path><path d="M579 0v983c71 3 131 9 198 17V0H579" fill="#b1060e"></path><path d="M225 0v200l198 600V557l151 426c76 3 136 9 203 17V800L579 200v240L423 0H225" fill="url(#4665ef02-2efd-4a1e-9804-39331c83c679-a)"></path><path d="M225 0l349 983c76 3 136 9 203 17L423 0H225" fill="#e50914"></path></svg>
+        <h5 id="net">Plans start at just ₹149</h5>
+        <a href="./join.htm"><button id="join">Join now</button></a>
+      </div>
+      <!-- <div id="blank"></div> -->
+    </main>
+    <div id="h">
+      <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More Details</h1>
+    </div>
+    <sec id="footer">
+      
+      <div id="blank"></div>
+    <div id="f1">
+     <ul><h6 class="f">Watch offline</h6>
+      <li>Download and watch everywhere <br> you go.</li>
+     </ul>
+     <ul><h6 class="f">Subtitles</h6>
+      <li>English, Japanese</li>
+     </ul>
+     <ul><h6 class="f">Cast</h6>
+      <li>Wasabi Mizuta <br>Tomokazu Seki</li>
+     </ul> <br>
+    </div>
+
+    <div id="f2">
+      <ul>
+        <h6 class="f">Genres</h6>
+        <li>
+          Family Features, Children & Family Movies, <br> Japanese, Anime Features</li><br><br><br> 
+      </ul>
+      <ul>
+        <h6>Megumi Ohara</h6>
+        <li>
+          Satoshi Tsumabuki</li>
+      </ul>
+    </div>
+
+    <div id="f3">
+      <ul><h6 class="f">This movie is...</h6>
+        <li>Feel-Good, Heartfelt</li> <br><br><br><br><br>
+        <li>
+          Yumi Kakazu</li>
+      </ul>
+    </div>
+    <div id="f4">
+      <ul ><h6 class="f">Audio</h6>
+        <li>English, Hindi, Japanese - Audio Description, Japanese [Original]</li> <br><br>  <br><br>     
+        <li>
+          Subaru Kimura</li>
+      </ul>
+      
+    </div>
+    <div id="blank"></div>
+  </sec>
+  
+
+      <div class="grid text-center" id="grid">
+
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVx-OtQ0GMwtX9rCeQ6jJGVtjagCLGGqukOyn5m3l4dXw3ZJoKPWvjBlxCmAUY0EwR0czqLmnGp7osUQxG3ukI9TSU5QgHEzttcR.jpg?r=bcb" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABf1O0zknqteHIvgepjsgSxc1jS-auKFv1ctFEYH7yqH2R19qrw2EoZUzMs0It_r57OqeZ8FsxO1F0nBGfoFy_l_Ff5mtEk4pfNJD.jpg?r=2e8" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWGnYvFGhgIjxEODRqOKTfRnygMbwC-vVmrkn5tZOLbTtvk4UWx3gbSOxGH1Ia8GIALAguexsWoByRRsUaHFXSYZze5RTh_igSYr.jpg?r=597" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcEN1Jc755ErtOJAZRq_nejIQUR6Gf5gkZmiNoVEeTzpljH9ozs9ou7Or7lCrVakCP3tKPLoma7KCV4syO9UntSVcNaVl4aWZhQo.jpg?r=cc3" class="grid-img" alt=""></a>
+        
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTtfPiQwf0KsCC8s28McJi3uqf0kiMMjDs6LhymilsF72HB336bTtfJBoYQ25FSxU5x0Ankm61WbLBJVudRoDkpwQ7oLDqAOLoxK.jpg?r=ac4" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABerRZrDfNvNYlVE6Zm_EnrBR4Fi8k36YOaWLYHLbOsAxCwpljp_NPdKOtFi9StigJqEwCYqdkKnAVHVh2oK4Si3RcVssT7-2-smo.jpg?r=7c4" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABV4yayR8vTmUlIpzN_3-BCOlbw3IbkP3IKtCca5LpqMNUSFE2RyjRAp3c6n6owbG_Y2sOT6tCbuxoDMTiduM7uMaNM53xMEgQPGR1Q_yaafbKiyL2bngUvcQxy_cVfH-tTH06g.jpg?r=91a" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcXt2ecXAqfD5EUxKgVIR7tAF142ISfX9VX1zNP6Tv1osWk5HITsbfUO38wQ2jlq1WfAqL__-cb_SAEo2z6u1b2oUBOE69HWpal_.jpg?r=21d" class="grid-img" alt=""></a>
+        
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSL4bGX8huHm4c95YLkClL0agOR74SHVDmsxuayRlESRctaFXDgUcbEMwnur5HNFhmoDb_HH7Q1YdZryvXQRjzjy-hHZix7bmrIf.jpg?r=ba8" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTuBL5RQ9api6jyRnMyfRQ8Z_IJu4sE5y5rP7dXakhu4g3hbwllbAnBgv7YrlmUVyKJjAz9C_ujNmagcWZxtenohyiSkq42EooNE.jpg?r=3b2" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTuQNBSzlEKuJ9mNVWUSZhudn2yA9n-1BHNcy02HZ_wCXVph9sTXOjJymLpYgByx4TRGeNMgu95Q2imSXofBnB0oMRjLhJIh7-nY.jpg?r=837" class="grid-img" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=vcmXSkTVa3Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXr2agc-EEHLak4Qvv9VZSHiwO-H4D_Ott9xzIHn2GMLbB4y9wS1HeyzWYBRwMjMo3kfN7u16uMYLWpR9sKbTqftQnp6GqZ4P2bn.jpg?r=2df" class="grid-img" alt=""></a>
+        
+
+      </div>
+      <section id="foot">
+        <div id="sub-div1"> <br>
+          <p style="color: #a3a3a3;">Go behind the scenes of Netflix TV shows and <br> movies, see what's coming soon and watch bonus <br> videos on Tudum.com.</p>
+        </div> <br><br><br><br>
+        <h5 id="fh">Questions? Call 000-800-919-1694</h5> <br> <br>
+        <div id="sub-div2"> <br> 
+          
+        <ul>
+          <li>FAQ</li>
+          <li>Investor Relations</li>
+          <li>Privacy</li>
+          <li>Speed Test</li>
+        </ul>
+        <ul>
+          <li>Help Centre</li>
+          <li>Jobs</li>
+          <li>Cookie Preferences</li>
+          <li>Legal Notices</li>
+        </ul>
+        <ul>
+          <li>Account</li>
+          <li>Ways to Watch</li>
+          <li>Corporate Information</li>
+          <li>Only on Netflix</li>
+        </ul>
+        <ul>
+          <li>Media Centre</li>
+          <li>Terms of Use</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      </section>
+      <script src="./dor.js"></script>
+  </body>
+</html>

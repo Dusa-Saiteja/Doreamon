@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    border: 2px solid;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+}
+svg{
+    height: 28px;
+    fill: red;
+}
+#btn1{
+    width: 150px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+#btn2{
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+#nav-left{
+    position: absolute;
+    left: 45px;
+    top: 18px;
+}
+#nav-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    position: absolute;
+    right: 45px;
+    top: 12px;
+}
+main{
+    border: 2px solid;
+    height: 700px;
+    width: 100%;
+    background-image: url("https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbrPOL65fY0TrANu6_mYOj733SvaZ3K6ozxGi_ZQB--K1j4kUTqNP2Hqg_shXrVUypJFHU7kZ_WieW2hwsL9uW3yR_1or4q3s-PR.jpg?r=9a1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#dor{
+    /* border: 2px solid pink; */
+    height: 640px;
+    width: 35%;
+    position: absolute;
+    top: 57px;
+    left: 42px;
+    background: linear-gradient(90deg, #181818 10%, hsla(0, 0%, 9%, .98) 20%, hsla(0, 0%, 9%, .97) 25%, hsla(0, 0%, 9%, .95) 35%, hsla(0, 0%, 9%, .94) 40%, hsla(0, 0%, 9%, .92) 45%, hsla(0, 0%, 9%, .9) 50%, hsla(0, 0%, 9%, .87) 55%, hsla(0, 0%, 9%, .82) 60%, hsla(0, 0%, 9%, .75) 65%, hsla(0, 0%, 9%, .63) 70%, hsla(0, 0%, 9%, .45) 75%, hsla(0, 0%, 9%, .27) 80%, hsla(0, 0%, 9%, .15) 85%, hsla(0, 0%, 9%, .08) 90%, hsla(0, 0%, 9%, .03) 95%, hsla(0, 0%, 9%, 0));
+    
+}
+#empty{
+    /* border: 2px solid blue;  */
+    height: 640px;
+    width: 42px;
+    position: relative;
+    bottom: 290px;
+    right: 85px;
+    background-color: #181818;
+}
+#plan{
+    /* border:  2px solid green; */
+    height: 60px;
+    width: 88%;
+    position: absolute;
+    bottom: 30px;
+    left: 85px;
+    display: flex;
+    align-items: center;
+    background-color: #6c1f41;
+    z-index: 1;
+}
+#N{
+    position: absolute;
+    left: 25px;
+    height: 40px;
+}
+#net{
+    position: absolute;
+    left: 65px;
+    color: white;
+    font-size: 17px;
+}
+#join{
+    position: absolute;
+    right: 80px;
+    bottom: 10px;
+    color: white;
+    height: 38px;
+    width: 180px;
+    border: none;
+    background-color: red;
+}
+.grid-img{
+    height: 186.98px;
+    width: 332.4;
+    margin-left: 55px;
+    margin-top: 45px;
+}
+
+#grid{
+    /* border: 2px solid orange; */
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-column-gap: 150px;
+    grid-row-gap: 0px;
+    background-color: #181818;
+    position: relative;
+    bottom: 8px;
+}
+#signin{
+    border: 2px solid red;
+    height: 500px;
+    width: 500px;
+    opacity: 1;
+    /* z-index: 1px; */
+    margin-left: 530px;
+    margin-top: 100px;
+    background-color: #181818;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+}
+.UP{
+    color: white;
+}
+#sub{
+    background-color:red;
+    height: 40px;
+    width: 150px;
+}
+#x{
+    border: 2px solid;
+    background-color: white;
+    position: absolute;
+    bottom: 589px;
+    right: 500px;
+    height: 28px;
+}
+#x:hover{
+    cursor: pointer;
+}
+#footer{
+    /* border: 2px solid; */
+    height: max-content;
+    /* width: 85%; */
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 105px;
+    position: relative;
+    bottom: 8px;
+   
+}
+
+.f{
+    color: #a3a3a3;
+ }
+ div ul li{
+    list-style: none;
+ }
+#h h1{
+    background-color: black;
+    color: white;
+    height: 105px;
+    padding-top: 45px;
+}
+#foot{
+    /* border: 2px solid greenyellow; */
+    height: 500px;
+    width: 100%;
+    position: relative;
+    bottom: 8px;
+    background-color: black;
+}
+#sub-div1{
+    background-color: black;
+    /* border: 2px solid yellow; */
+    width: 65%;
+    position: relative;
+    left: 48px;
+
+}
+#fh{
+    position: absolute;
+    left: 100px;
+    color: #a3a3a3;
+}
+#sub-div2{
+    color: #a3a3a3;
+    display: flex;
+    gap: 75px;
+}
+#sub-div2 ul li{
+    line-height: 42px;
+    font-size: 12px;
+}
+ 
+

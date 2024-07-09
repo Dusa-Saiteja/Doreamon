@@ -1,0 +1,119 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: black;
+}
+#sec1{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/a7d20bc1-831c-4f9d-8153-11bdf7a08d23/IN-en-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_13cda806-d858-493e-b4aa-f2792ff965dc_large.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    height: 700px;
+    width: 100%;
+    background-color:  rgb(0, 0, 0);
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+}
+nav{
+    /* border: 2px solid white; */
+    height: 80px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 180px;
+
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#svg1{
+    height: 100px;
+    width: 100px;
+    fill: red;
+}
+select option{
+    color: black;
+}
+
+#language{
+    width: 95px;
+    color: white;
+    height: 25px;
+    display: flex;
+    background: transparent;
+    position: absolute;
+    right: 105px;
+}
+#btn{
+    color: white;
+    background-color: red;
+    border-radius: 12px;
+    height: 35px;
+    width: 85px;
+    border: none;
+}
+#sec2{
+    /* border: 2px solid white; */
+    width: 60%;
+    height: 365px;
+    position: relative;
+    top: 218px;
+    left: 315px;
+    color: white;
+    text-align: center;  
+}
+#email{
+    height: 50px;
+    width: 300px;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+}
+#email::placeholder{
+    color: white;
+}
+#G-btn{
+    background: red;
+    height: 50px;
+    width: 180px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+#sec3{
+    border: 2px solid white;
+    width: 100%;
+    background-color: black;
+    height: 500px;
+}
+
+
+
+/* --------------------------- */
+#div2{
+    /* border: 2px solid greenyellow; */
+    height: 180px;
+    width: 70%;
+    background-color: black;
+    display: flex;
+    color: #a3a3a3;
+    position: relative;
+    left: 200px;
+    column-gap: 65px;
+    
+}
+#div2 ol{
+    list-style: none;
+    line-height: 45px;
+}
+#call{
+    color: #a3a3a3;
+    font-size: 16px;
+    position: relative;
+    left: 235px;
+    top: 105px;
+}
